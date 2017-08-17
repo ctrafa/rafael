@@ -1,10 +1,18 @@
 applications:
-- memory: 512M
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: mybluemix.net
+  name: rafael
+  host: rafael
+  disk_quota: 1024M
   services:
-  - sample-node-red-cloudantNoSQLDB
+  - Conversation-lm
+  - Document Conversion-7e
+  - Retrieve and Rank-1j
+  - Weather Company Data-3y
+  - Text to Speech-8o
+  - Speech to Text-z8
+  - rafael-cloudant
   env:
-    NODE_RED_STORAGE_NAME: sample-node-red-cloudantNoSQLDB
-declared-services:
-  sample-node-red-cloudantNoSQLDB:
-    label: cloudantNoSQLDB
-    plan:  Lite
+    NODE_RED_GUEST_USER: 'false'
