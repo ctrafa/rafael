@@ -1,28 +1,28 @@
 {
     "name"         : "node-red-bluemix-starter",
-    "version"      : "*",
+    "version"      : "0.6.0",
     "dependencies": {
-        "appmetrics-dash": "*",
-        "when": "*",
-        "nano": "*",
-        "bcrypt": "*",
-        "cfenv":"*",
-        "express":"*",
-        "body-parser":"*",
-        "http-shutdown":"*",
-        "node-red": "*",
-        "node-red-bluemix-nodes":"*",
-        "node-red-node-watson":"*",
-        "node-red-node-openwhisk":"*",
-        "node-red-node-cf-cloudant":"*",
-        "node-red-contrib-scx-ibmiotapp":"*",
-        "node-red-nodes-cf-sqldb-dashdb":"*",
-        "node-red-contrib-browser-utils":"*"
+        "appmetrics-dash": "^3.2.1",
+        "when": "~3.x",
+        "nano": "6.2.x",
+        "bcrypt": "1.0.2",
+        "cfenv":"~1.0.0",
+        "express":"4.x",
+        "body-parser":"1.x",
+        "http-shutdown":"1.2.0",
+        "node-red": "0.x",
+        "node-red-bluemix-nodes":"1.x",
+        "node-red-node-watson":"0.x",
+        "node-red-node-openwhisk":"0.x",
+        "node-red-node-cf-cloudant":"0.x",
+        "node-red-contrib-scx-ibmiotapp":"0.x",
+        "node-red-nodes-cf-sqldb-dashdb":"0.x",
+        "node-red-contrib-browser-utils":"^0.0.5"
     },
     "scripts": {
         "start": "node --max-old-space-size=384 index.js --settings ./bluemix-settings.js -v"
     },
     "engines": {
-        "node": "*"
+        "node": "6.x"
     }
 }
