@@ -1,7 +1,7 @@
 applications:
 - path: .
   memory: 2048M
-  instances: 1
+  instances: 2
   domain: mybluemix.net
   name: rafael
   host: rafael
@@ -16,3 +16,4 @@ applications:
   - rafael-cloudant
   env:
     NODE_RED_GUEST_USER: 'false'
+    NODE_RED_USE_APPMETRICS: 'true'
